@@ -1,0 +1,14 @@
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\bin\Debug\Model.exe.config
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\bin\Debug\Model.exe
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\bin\Debug\Model.pdb
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\obj\Debug\Model.csproj.SuggestedBindingRedirects.cache
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\obj\Debug\Model.exe
+D:\Project\VisualStudioWorkspace\CapitalMSMQ\Model\obj\Debug\Model.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\bin\Debug\Model.exe.config
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\bin\Debug\Model.exe
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\bin\Debug\Model.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\obj\Debug\Model.exe
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Model\obj\Debug\Model.pdb

@@ -1,0 +1,16 @@
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Receiver1.exe.config
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Receiver1.exe
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Receiver1.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Apache.NMS.ActiveMQ.dll
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Apache.NMS.dll
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Model.exe
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Model.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Apache.NMS.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Apache.NMS.ActiveMQ.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\bin\Debug\Apache.NMS.ActiveMQ.xml
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.Form1.resources
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.Properties.Resources.resources
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.csproj.GenerateResource.Cache
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.exe
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.pdb
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver1\obj\Debug\Receiver1.csprojResolveAssemblyReference.cache
