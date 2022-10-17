@@ -1,0 +1,140 @@
+================================Modal=============================
+namespace Model
+{
+    [Serializable]
+    public class BenhNhan
+    {
+
+        public string msbn { get; set; }
+        public string soCMND { get; set; }
+        public string hoten { get; set; }
+        public string diaChi { get; set; }
+
+        public BenhNhan(string msbn, string cmnd, string hoTen, string diaChi)
+        {
+            this.msbn = msbn;
+            this.soCMND = cmnd;
+            this.hoten = hoTen;
+            this.diaChi = diaChi;
+        }
+
+        public BenhNhan()
+        {
+
+        }
+
+        public override string ToString()
+        {
+            return msbn + "\t" + hoten;
+        }
+
+    }
+}
+==============================sender==============================
+namespace Sender
+{
+    public partial class frmNhanBenh : Form
+    {
+        MessageQueue quece = null;
+
+        public frmNhanBenh()
+        {
+            InitializeComponent();
+
+            init(); 
+        }
+
+        private void init()
+        {
+            string path = @".\private$\khambenh";
+
+            if (MessageQueue.Exists(path))
+            {
+                quece = new MessageQueue(path, QueueAccessMode.Send);
+            }
+            else
+            {
+                quece = new MessageQueue(path, true);
+            }
+
+        }
+
+        private void txtLuuThongTin_Click(object sender, EventArgs e)
+        {
+            string msbn = txtMaSoBenhNhan.Text;
+            string socmnd = txtCMND.Text;
+            string hoten = txtHoTen.Text;
+            string diaChi = txtDiaChi.Text;
+
+            BenhNhan benhNhan = new BenhNhan(msbn, socmnd, hoten, diaChi);
+
+            MessageQueueTransaction transaction = new MessageQueueTransaction();
+            transaction.Begin();
+            quece.Send(benhNhan, transaction);
+            transaction.Commit();
+
+        }
+    }
+}
+==========================================Recieve===============================================
+namespace Receiver
+{
+    public partial class frmKhamBenh : Form
+    {
+        private MessageQueue queue;
+
+
+        public frmKhamBenh()
+        {
+            InitializeComponent();
+            init();
+        }
+
+        private void init()
+        {
+            string path = @".\private$\khambenh";
+            queue = new MessageQueue(path);
+            queue.BeginReceive();
+            queue.ReceiveCompleted += Queue_ReceiveCompleted;
+        }
+
+        private void Queue_ReceiveCompleted(object sender, ReceiveCompletedEventArgs e)
+        {
+            var msg = e.Message;
+            int type = msg.BodyType;
+            XmlMessageFormatter fmt = new XmlMessageFormatter(
+                new System.Type[]
+                {
+                    typeof(string),typeof(BenhNhan)
+                });
+            msg.Formatter = fmt;
+            var result = msg.Body;
+            var t = result.GetType();
+            if (t.Equals(typeof(BenhNhan)))
+            {
+                BenhNhan benhNhan = (BenhNhan)result;
+                SetText(benhNhan);
+            }
+            queue.BeginReceive();
+        }
+
+        delegate void SetTextCallback(string text);
+        private void SetText(BenhNhan benhNhan)
+        {
+            if (listBox.InvokeRequired)
+            {
+                txtMaSoBenhNhan.Invoke(new MethodInvoker(delegate { listBox.Items.Add(benhNhan); }));
+            }
+        }
+
+        private void btnGoiKham_Click(object sender, EventArgs e)
+        {
+            BenhNhan benhNhan = (BenhNhan)listBox.SelectedItem;
+            txtMaSoBenhNhan.Text = benhNhan.msbn;
+            txtHoTen.Text = benhNhan.hoten;
+            txtCMND.Text = benhNhan.soCMND;
+            txtDiaChi.Text = benhNhan.diaChi;
+            listBox.Items.RemoveAt(listBox.SelectedIndex);
+        }
+    }
+}

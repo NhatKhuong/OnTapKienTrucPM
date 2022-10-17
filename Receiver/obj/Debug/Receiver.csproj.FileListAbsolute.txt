@@ -28,3 +28,4 @@ D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver\bin\Debug\Apache.
 D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver\obj\Debug\Receiver.frmKhamBenh.resources
 D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver\obj\Debug\Receiver.Properties.Resources.resources
 D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver\obj\Debug\Receiver.csproj.GenerateResource.Cache
+D:\NHATKHUONG\KienTrucPhamMem\CapitalMSMQ\CapitalMSMQ\Receiver\obj\Debug\Receiver.csprojResolveAssemblyReference.cache
